@@ -7,11 +7,10 @@ const FolderTree = () => {
 
   const tree = useSelector(state => state.tree)
 
-
   return <div>
     <h2>Folder Tree</h2>
     <List component="nav">
-      {tree && <FolderBuilder node={tree} ></FolderBuilder>}
+      {Object.keys(tree).length > 0  && <FolderBuilder node={tree} ></FolderBuilder>}
     </List>
   </div>
 };

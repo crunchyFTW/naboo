@@ -5,7 +5,6 @@ import store from './store/index'
 
 
 function App() {
-
   return (
     <div className="App">
       <Provider store={store}>
@@ -16,3 +15,4 @@ function App() {
 }
 
 export default App;
+
