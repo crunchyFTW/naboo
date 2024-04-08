@@ -44,6 +44,7 @@ const FolderBuilder = ({ node, depth = 2 }) => {
     } catch (error) {
       console.error(error);
     }
+
   }
 
   const isNodeParent = (nodeId) => {
